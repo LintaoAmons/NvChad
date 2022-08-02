@@ -23,6 +23,7 @@ M.setup = function()
       formatting.shfmt,
       formatting.prettier,
       formatting.stylua,
+      formatting.fixjson,
 
       diagnostics.shellcheck,
       diagnostics.eslint,
