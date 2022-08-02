@@ -1,7 +1,9 @@
 local M = {}
 
+-- align with IDEA and other App
 local omniBar = {
     ["<C-p>"] = { "<cmd> Telescope find_files <CR>", "  find files" }
+    -- can't use <cmd> in vim, sad
   }
 M.OmniBar = {
   n = omniBar,
