@@ -55,6 +55,24 @@ opt.updatetime = 250
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append "<>[]hl"
 
+-- fold
+-- folding, set to "expr" for treesitter based folding
+opt.foldmethod = "expr"
+-- set to "nvim_treesitter#foldexpr()" for treesitter based folding
+opt.foldexpr =  "nvim_treesitter#foldexpr()"
+-- no fold to be applied when open a file
+opt.foldenable = true
+-- if not set this, fold will be everywhere
+opt.foldlevel = 99
+
+-- https://github.com/nvim-telescope/telescope.nvim/issues/559
+vim.cmd [[
+  augroup _fold_bug_solution  
+    autocmd!
+    autocmd BufRead * autocmd BufWinEnter * ++once normal! zx
+  augroup end
+]]
+
 g.mapleader = " "
 
 -- disable some builtin vim plugins

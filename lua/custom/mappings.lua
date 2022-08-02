@@ -45,6 +45,13 @@ M.Find = {
   },
 }
 
+M.Fold = {
+  n = {
+    ["<leader>zo"] = { "zR", "Unfold all" },
+    ["<leader>zc"] = { "zM", "Fold all" },
+  },
+}
+
 M.Git = {
   n = {
     ["<leader>gg"] = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Lazygit" },
@@ -70,10 +77,10 @@ M.Quit = {
   },
 }
 
--- M.No = {
---   l = { "<cmd>nohlsearch<CR>", "No Highlight" },
--- }
---
+M.No = {
+  l = { "<cmd>nohlsearch<CR>", "No Highlight" },
+}
+
 M.window = {
   n = {
     ["<leader>wl"] = { "<cmd>vsplit<cr>", "Split window vertically" },
