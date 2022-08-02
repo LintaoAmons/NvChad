@@ -20,6 +20,12 @@ M.Format = {
   }
 }
 
+M.paste = {
+  v = {
+    ["p"] = {'"_dP', "Paste without change current yanked content"}
+  }
+}
+
 M.Find = {
   n = {
     ["<leader>fb"] = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
