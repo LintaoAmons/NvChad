@@ -47,7 +47,7 @@ M.Find = {
 
 M.Quit = {
   n = {
-    ["<leader>qq"] = { "<cmd>qa!<cr>", "Quit vim" }
+    ["<leader>qq"] = { "<cmd>wqa<cr>", "Quit vim" }
   }
 }
 
