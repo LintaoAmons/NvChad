@@ -78,7 +78,10 @@ M.Quit = {
 }
 
 M.No = {
-  l = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  n = {
+    ["<leader>nl"] = "<cmd>nohlsearch<CR>",
+    "No Highlight",
+  },
 }
 
 M.window = {
