@@ -7,7 +7,7 @@ return {
   },
   ["jose-elias-alvarez/null-ls.nvim"] = {
     config = function()
-      require("custom.plugins.null-ls").setup()
+      require("custom.plugins.configs.null-ls").setup()
     end,
   },
   ["kylechui/nvim-surround"] = {
