@@ -92,4 +92,10 @@ M.window = {
   },
 }
 
+M.Show = {
+  n = {
+    ["<leader>ss"] = { "<cmd>AerialToggle<cr>", "Show structure" },
+  },
+}
+
 return M

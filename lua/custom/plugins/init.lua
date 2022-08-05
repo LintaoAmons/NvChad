@@ -17,6 +17,17 @@ return {
       }
     end,
   },
+  ["stevearc/aerial.nvim"] = {
+    config = function()
+      require("aerial").setup()
+    end,
+  },
+  ["Shatur/neovim-session-manager"] = {
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("custom.plugins.configs.neovim-session-manager").setup()
+    end,
+  },
   -- ["Pocco81/auto-save.nvim"] = {
   --   commit = "268069b1a5fab571e33f6c8de95e45f0e52423db",
   --   config = function()
