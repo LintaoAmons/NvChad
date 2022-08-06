@@ -28,6 +28,12 @@ return {
       require("custom.plugins.configs.neovim-session-manager").setup()
     end,
   },
+  ["akinsho/toggleterm.nvim"] = {
+    tag = "v2.*",
+    config = function()
+      require("toggleterm").setup()
+    end,
+  },
   -- ["Pocco81/auto-save.nvim"] = {
   --   commit = "268069b1a5fab571e33f6c8de95e45f0e52423db",
   --   config = function()

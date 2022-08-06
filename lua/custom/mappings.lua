@@ -98,4 +98,10 @@ M.Show = {
   },
 }
 
+M.toggleTerm = {
+  n = {
+    ["<leader>gg"] = { '<cmd>lua require("lua.custom.plugins.configs.toggleTerm").lazygit()<cr>', "toggle lazygit" },
+  },
+}
+
 return M
