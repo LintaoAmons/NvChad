@@ -7,9 +7,4 @@ M.lazygit = function()
   lazygit:toggle()
 end
 
-local btop = Terminal:new { cmd = "btop", direction = "float", hidden = true }
-M.btop = function()
-  btop:toggle()
-end
-
 return M
