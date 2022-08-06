@@ -54,7 +54,6 @@ M.Fold = {
 
 M.Git = {
   n = {
-    ["<leader>gg"] = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Lazygit" },
     ["<leader>gj"] = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     ["<leader>gk"] = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
     ["<leader>gl"] = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
@@ -100,7 +99,7 @@ M.Show = {
 
 M.toggleTerm = {
   n = {
-    ["<leader>gg"] = { '<cmd>lua require("lua.custom.plugins.configs.toggleTerm").lazygit()<cr>', "toggle lazygit" },
+    ["<leader>gg"] = { '<cmd>lua require("custom.plugins.configs.toggleTerm").lazygit()<cr>', "toggle lazygit" },
   },
 }
 
